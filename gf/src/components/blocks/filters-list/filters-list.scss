@@ -1,0 +1,31 @@
+.filters {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+
+    & li + li {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__type {
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+    border: $border;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    color: $color-text-regular;
+    transition: 0.3s all ease-in;
+
+    &--active {
+      color: white;
+      background-color: $color-text-header;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.user-block {
+  display: flex;
+  
+  &__item + .user-block__item {
+    margin-left: 1.2em;
+  }
+
+  &__item svg{
+    height: 1em;
+    width: 1em;
+  }
+}

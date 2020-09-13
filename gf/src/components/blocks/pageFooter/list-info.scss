@@ -1,0 +1,19 @@
+.list-info {
+  display: flex;
+  justify-content: center;/* 
+  width: 100%; */
+
+ /*  &__section {
+    &:last-child {
+      margin-left: 100px;
+    }
+  } */
+  &__title {
+    font-weight: bold;
+    line-height: 25px;
+  }
+  &__list {
+    line-height: 25px;
+  }
+ 
+}

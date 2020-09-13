@@ -1,0 +1,93 @@
+.header {
+  color: $color-text-header;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 1px 5px 1px rgba($color: #3a3d49, $alpha: 0.5);
+
+  &__inner {
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+  }
+
+  @media (max-width: $screen-xxs) {
+    &__logo {
+      display: none;
+    }
+  }
+  &__menu {
+    width: 400px;
+    margin-right: 2rem;
+  }
+
+  &__user-block {
+    display: flex;
+  }
+
+  &__mobile-menu-button {
+    font-size: 2.5rem;
+    display: none;
+
+    & button {
+      border: none;
+      cursor: pointer;
+      color: $color-text-header;
+      font-weight: 600;
+      padding: 0 0.5rem;
+      background-color: transparent;
+    }
+  }
+
+  &__mobile-menu-toggle {
+    display: none;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    color: $color-text-header;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 0 0.5rem;
+    background-color: transparent;
+    padding-top: 0rem;
+    /* display: block; */
+    margin-left: auto;
+  }
+  @media (max-width: $screen-md) {
+    font-size: 1.7rem;
+
+    &__user-block {
+      display: none;
+    }
+    &__mobile-menu-button {
+      display: block;
+    }
+  }
+  @media (max-width: $screen-xs) {
+    font-size: 1.5rem;
+    &__menu {
+      margin-right: 1.2rem;
+    }
+    &__inner {
+      padding: 15px 5px;
+    }
+  }
+  @media (max-width: $screen-xxs) {
+    font-size: 1rem;
+    &__inner {
+      padding: 10px 5px;
+    }
+    &__mobile-menu-toggle {
+      display: block;
+    }
+  }
+
+  /* на 768 скрыть элементы ЛК и добавить кнопку мобильного меню */
+}

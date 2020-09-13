@@ -1,0 +1,75 @@
+.footer {
+  background-color: $color-bg;
+  font-family: "Oswald", sans-serif;
+
+  &__top {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    @media (max-width: $screen-xs) {
+      margin-left: 5rem;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__subscribe-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: fit-content;
+  }
+  &__form-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: 2rem;
+  }
+  &__form {
+    display: flex;
+  }
+  &__form-input {
+    padding: 0.7rem 1.5rem;
+    border: $border-easy;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+
+    &::placeholder {
+      font-weight: normal;
+      font-size: 11.4;
+      line-height: 3rem;
+    }
+  }
+  &__form-button {
+    height: 3rem;
+    font-size: 11px;
+    line-height: 13px;
+    text-align: center;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+    color: white;
+    background-color: $color-accent;
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+  }
+  &__information-list {
+    
+    margin-right: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  &__social-links {
+    height: 100%;
+    width: 300px;
+  }
+  
+ 
+}

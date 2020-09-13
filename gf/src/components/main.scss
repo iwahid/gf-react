@@ -1,0 +1,103 @@
+/* соблюдая порядок подключения стилей */
+
+/* ================================ */
+
+/* normalize */
+@import "./blocks/baseComponents/normalize.scss";
+
+/* переменные */
+@import "./blocks/baseComponents/variables";
+
+/* общие стили всего проекта */
+@import "./blocks/baseComponents/base-style.scss";
+
+/* миксины */
+/* @import "./../base/mixins"; */
+
+/* шрифты */
+/* @import "./../base/fonts/fonts"; */
+
+
+
+
+
+/* ================================ */
+
+/* компоненты */
+
+/* header */
+@import "blocks/pageHeader/header.scss";
+@import "blocks/pageHeader/header-menu.scss";
+@import "blocks/pageHeader/logo/logo.scss";
+
+/* мобильное меню */
+@import "blocks/mobile-menu/mobile-menu.scss";
+
+/* user-block */
+/* @import "bloks/user-block/user-block"; */
+
+
+
+/* каталог товаров */
+@import "./pages/catalog/catalog.scss";
+
+/* фильтр */
+@import "./blocks/filters-list/filters-list.scss";
+
+/* карточка товара */
+@import "./blocks/product-card/productCard.scss";
+
+
+/* Корзина */
+@import "./pages/cart/cart.scss";
+/* Страница корзины */
+@import "pages/cart/cart-table/table-header";
+@import "pages/cart/cart-table/table";
+/* Элементы корзины */ 
+@import "./blocks/cart-elements/list-item/list-item.scss"; /* айтемы в таблице */
+@import "./blocks/cart-elements/cart-sheque/cart-sheque.scss"; /* чек */
+@import "./blocks/cart-elements/empty-cart/empty-cart.scss"; /* пустая корзина */
+
+
+/* общие стили для всех секций */
+@import "sections/section-common-styles.scss";
+@import "sections/slider-section";
+
+
+
+
+
+
+/* footer */
+@import "./blocks/pageFooter/footer.scss";
+@import "./blocks/pageFooter/list-info.scss";
+
+
+
+
+
+/* UI */
+@import "./blocks/ui/button.scss";
+
+ 
+
+/* ============================================ */
+/* схема стилей из другого проекта */
+
+/* подключил общий свайпер с дефолтными стилями */
+/* @import "common-parts/sliderjs/swiperjs/swiper";
+@import "common-parts/sliderjs/swiperjs/custom-styles"; */
+
+
+/* slider-section */
+/* Кастомизация свайперов - через описание в фалах _slider.scss в соответствующих блоку папках */
+/* баннер */
+/* @import "slider-section/promo/promo-deal";  */
+
+/* кастом стиль для первого слайдера */
+/* @import "slider-section/slider/slider";  */
+
+/* кастом стиль для второго слайдера */
+/* @import "popular-section/slider/slider";  */
+
+/* ============================================ */

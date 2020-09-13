@@ -1,0 +1,125 @@
+.cart-cheque {
+  margin-top: 2rem;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  background-color: $color-bg;
+
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 8px;
+    background-repeat: repeat-x;
+    background-position: top left;
+    background-image: url("cart-cheque.svg");
+  }
+  &__coupon {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    border-bottom: $border-easy;
+  }
+  &__pieces-count {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    border-bottom: $border-easy;
+
+    & span {
+      margin-right: 2.7rem;
+      &::before {
+        position: absolute;
+        content: "шт.";
+        right: 2rem;
+      }
+    }
+  }
+  &__subtotal {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    border-bottom: $border-easy;
+    & span {
+      &::before {
+        position: absolute;
+        content: "₽";
+        margin-left: -1.5rem;
+      }
+    }
+  }
+  &__total {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    border-bottom: $border-easy;
+    & span {
+      &::before {
+        position: absolute;
+        content: "₽";
+        margin-left: -1.5rem;
+      }
+    }
+  }
+  &__pay {
+    display: flex;
+    justify-content: flex-end;
+    padding: 3rem 2rem;
+  }
+
+  @media (max-width: $screen-md) {
+
+    margin-top: 5rem;
+    font-size: 1.7rem;
+
+    &__coupon {
+      padding: 1.8rem 1.8rem;
+    }
+
+    &__pieces-count {
+      padding: 1.8rem 1.8rem;
+      & span {
+        margin-right: 3.5rem;
+      }
+    }
+
+    &__subtotal {
+      padding: 1.8rem 1.8rem;
+      & span {
+        &::before {
+          position: absolute;
+          content: "₽";
+          margin-left: -1.5rem;
+        }
+      }
+    }
+    &__total {
+      padding: 1.8rem 1.8rem;
+      & span {
+        &::before {
+          position: absolute;
+          content: "₽";
+          margin-left: -1.5rem;
+        }
+      }
+    }
+
+    &__pay {  
+      & button {
+        padding: 1.5rem 2rem;
+        font-size: 2.2rem;
+      }
+    }
+
+  }
+
+
+
+} 

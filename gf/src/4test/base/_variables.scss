@@ -1,0 +1,53 @@
+/* базовые цвета текста */
+
+$color-text-header: #3a3d49; /* #d0d4da; */
+$color-text-regular: #777a83; /* #d0d4da; */
+$color-text-light: #d0d4da;
+
+/* базовые цвета макета */
+$color-bg: #F4F4F4;
+$color-accent: #51be42;
+
+$border: 1px solid #d0d4da;
+$border-easy: 1px solid rgba($color: #d0d4da, $alpha: 0.5);
+$border-v-hidden: 1px solid #fff;
+/* типография */
+/* заголовки */
+/* h1 - 36px */
+/* h2 - 32px */
+/* h3 - 28px */
+/* h4 - 24px */
+/* h5 - 20px */
+/* отступы у заголовков 1.8em 0.9em сверху/снизу */
+
+/* размеры экранов */
+
+/* 240 320 360 480 540 576 600 640 720 768 800 980 1024 1080 1280 1366 1600. */
+$screen-xxxs: 320px;
+$screen-xxs: 440px;
+$screen-xs: 540px;
+$screen-sm: 640px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+
+
+$disabled: #adadad;
+$icon-fill: #b5b5b5;
+
+/* для всех ссылок */
+$icon-fill-animation: 0.2s fill ease-in;/* анимация перекрашивания иконок */
+$text-color-animation: 0.2s color ease-in;/* анимация перекрашивания текста */
+
+/* для sidebar menu */
+$text-animation: 0.2s ease-in; /* анимация для пунктов side-bar menu. Реализовано отдельно, поскольку не является ссылками */
+$fill-animation: 0.2s fill ease-in; /* тоже анимация, для svg иконок пунктов sidebar menu */
+$border-animation: 0.2s border ease-in; /* рамки у элементов sidebar menu */
+
+/* для внутренних элементво сайта (кнопок) */
+$icon-animation: 0.2s all ease-in; /* анимация для svg элементов, являющихся кнопками или другими эл. управления */
+
+/* общий стиль теней для всех объектов на сайте */
+$shadow-animation: 0.2s box-shadow ease-in; 
+ 

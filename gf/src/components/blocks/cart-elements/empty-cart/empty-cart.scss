@@ -1,0 +1,42 @@
+/* Да, классы написаны коряво. Блоки в блоках следовало бы называть иначе, но в данный момент акцент делаю на функциональности. Шлифовкой займусь на этапе рефакторинга (если до этого дойдут руки) */
+.cart {
+  &__empty {
+    
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    width: 100%;
+    text-align: center;
+    
+  }
+  &__empty-img {
+    margin-bottom: 5rem;
+    & img {
+      max-width: 30rem;
+    }
+  }
+  &__empty-title {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  &__inner {
+    max-width: 50rem;
+    display: flex;
+    flex-direction: column;
+  }
+  /* &__empty-return {
+    width: 100%;
+    max-width: 300px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    color: $color-text-header;
+    font-weight: 500;
+    background-color: $color-accent;
+    margin-top: auto;
+    transition: 0.3s all ease-in;
+  } */
+}

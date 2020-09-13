@@ -1,0 +1,59 @@
+.catalog {
+  &__header {
+    /* здесь общие стили для всех страниц */
+  }
+  &__title {
+     /* здесь общие стили для всех страниц */
+  }
+  &__body {
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+  &__filters {
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-bottom: 3.5rem;
+  }
+  /* &__filters-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    & li + li {
+      margin-left: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__filters-type {
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    background-color: transparent;
+    border: none;
+    border: $border;
+    border-radius: 0.5rem;
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    color: $color-text-regular;
+    transition: 0.3s all ease-in;
+
+    &--active {
+      color: white;
+      background-color: $color-text-header;
+    }
+  } */
+
+  &__filters-range {
+  }
+  &__card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* если буду делать виджет корзины, то изменить здесь */
+    margin-left: -32px;
+    width: calc(100% + 36px );
+  }
+}
+

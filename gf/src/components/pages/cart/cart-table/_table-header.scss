@@ -1,0 +1,67 @@
+.table-header {
+  font-family: Roboto, sans-serif;
+  font-size: 1.4rem;
+  color: $color-text-regular;
+  font-weight: 400;
+  padding: 1.5rem 0;
+  border-bottom: $border;
+
+  &__product-name {
+    width: 46%;
+  }
+  &__product-price {
+    width: 13%;
+  }
+  &__product-quantity {
+    width: 20%;
+  }
+  &__product-subtotal {
+    width: 11%;
+  }
+  &__product-delete {
+    margin-left: auto;
+  }
+  @media (max-width: $screen-sm) { /* на узких экранах отключаю столбец с ценой */
+    &__product-name {
+      width: 54%;
+    }
+
+    &__product-price {
+      width: 0;
+      display: none;
+    }
+    &__product-quantity {
+      width: 25%;
+    }
+  }
+  @media (max-width: $screen-xs) { 
+
+    &__product-name {
+      width: 44%;
+    }
+
+    &__product-quantity {
+      width: 25%;
+    }
+
+    &__product-subtotal {
+      width: 16%;
+    }
+  }
+  @media (max-width: $screen-xs) { 
+    
+    &__product-name {
+      width: 59%;
+    }
+
+    &__product-quantity {
+      width: 30%;
+    }
+
+    &__product-subtotal {
+      width: 0;
+      display: none;
+    }
+
+  }
+}
