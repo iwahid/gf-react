@@ -3,8 +3,9 @@ import React from 'react'
 import ListItem from "./../../blocks/cart-elements/list-item/list-item"
 import CartSheque from '../../blocks/cart-elements/cart-sheque/cart-sheque'
 import EmptyCart from '../../blocks/cart-elements/empty-cart/empty-cart'
+import Button from '../../blocks/ui/button'
 
-function Cart() {
+function Cart(props) {
   
   const arr = [1, 2, 3, 4, 5]
 
@@ -16,7 +17,6 @@ function Cart() {
         </div>
 
         <div class="container">
-
           <div class="cart__body">
             <div class="cart__table table">
 
@@ -31,7 +31,7 @@ function Cart() {
 
               <div class="table__body table-body ">
                 <ul>
-                  {arr && arr.map((item, index) => {
+                  {props.products && props.products.map((item, index) => {
                     return (
                       <li key={index}>
 

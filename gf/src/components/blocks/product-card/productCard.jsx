@@ -10,7 +10,7 @@ function ProductCard(props) {
   let [param1, setParam1] = useState(0)
   const items1 = [...sizes]
 
-  console.log(imageUrl)
+  
   /* Хуки для второго параметра (толщина теста) */
   let [param2, setParam2] = useState(0)
   const items2 = [...types]
@@ -59,7 +59,7 @@ function ProductCard(props) {
                   type="button"
                   className={`product-card__select-size ${param2 === index ? "product-card__select-size--active" : ""}`}
                   onClick={() => setParam2(index)}
-                >{item == 0 ? 'Тонкое' : "Традиционное"}</button>
+                >{item == 0 ? 'Тонкое' : "Традиционное"}</button> {/* FIXME: заменить значения в json файле */}
               </li>
             )} 
           </div>
@@ -67,7 +67,9 @@ function ProductCard(props) {
           <div className="product-card__price">{price}</div>
           
         <Button
-          title="Добавить в корзину" />
+        /* TODO: возвращать через хуки объект с текущими данными и набором выбранных характеристик */
+          title="Добавить в корзину" 
+          onclick={() =>console.log("func", props)}/>
         </div>
 
       </div>

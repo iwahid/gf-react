@@ -1,11 +1,13 @@
 import React from 'react'
+import Button from '../../blocks/ui/button'
 
-function home() {
+function Home(props) {
   return (
     <div>
-     Главная страница (лендинг)
+      Главная страница (лендинг {props.children})
+      <Button></Button>
     </div>
   )
 }
 
-export default home
+export default Home
